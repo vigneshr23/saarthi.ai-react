@@ -1,0 +1,36 @@
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--light-gray);
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  left: 2.5%;
+  top: 2%;
+  border-radius: 0.75rem;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.modal-header {
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+}
+
+@keyframes popup {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .modal-container {
+    width: 90%;
+    top: 2%;
+  }
+}

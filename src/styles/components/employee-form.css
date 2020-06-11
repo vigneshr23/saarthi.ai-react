@@ -1,0 +1,44 @@
+.employeeform {
+  padding: 1.5rem;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+fieldset {
+  margin: 0.75rem;
+  flex-basis: 32%;
+}
+fieldset label {
+  padding-right: 0.5rem;
+}
+fieldset label:after {
+  content: ":";
+  padding-left: 2px;
+}
+
+.form__actions {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+.error {
+  border: 1px solid var(--red);
+}
+
+.error-msg {
+  color: var(--red);
+  display: block;
+  text-align: left;
+  font-size: 90%;
+}
+
+@media screen and (max-width: 750px) {
+  fieldset {
+    flex-basis: 100%;
+  }
+}

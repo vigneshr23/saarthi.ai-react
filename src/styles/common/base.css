@@ -1,0 +1,30 @@
+:root {
+  --light-gray: #f8f9fa;
+  --red: rgba(230, 50, 50, 1);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.backdrop {
+  opacity: 0.6;
+}
+
+.App {
+  text-align: center;
+}
+
+.content {
+  margin: 2.5rem 1rem;
+}

@@ -1,0 +1,9 @@
+.floating-table {
+  position: relative;
+  max-height: 45rem;
+  overflow-y: scroll;
+}
+.floating-table thead {
+  position: sticky;
+  top: 0;
+}
