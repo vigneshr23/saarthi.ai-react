@@ -9,22 +9,28 @@ function EmployeeTable({ employees, onRemove }) {
   };
 
   const renderRows = () => {
-    return employees.map(({ empName, empId, dept, emailId, doj }, index) => (
-      <tr key={index}>
-        <th scope="row">{empId}</th>
-        <td>{empName}</td>
-        <td>{departments[dept - 1]}</td>
-        <td>{doj}</td>
-        <td>{emailId}</td>
-        <td>
-          <Remove
-            onClick={() => handleRemove(empId)}
-            title="Remove Employee"
-            size={20}
-          />
-        </td>
+    return employees.length > 0 ? (
+      employees.map(({ empName, empId, dept, emailId, doj }, index) => (
+        <tr key={index}>
+          <td>{empId}</td>
+          <td>{empName}</td>
+          <td>{departments[dept - 1]}</td>
+          <td>{doj}</td>
+          <td>{emailId}</td>
+          <td>
+            <Remove
+              onClick={() => handleRemove(empId)}
+              title="Remove Employee"
+              size={20}
+            />
+          </td>
+        </tr>
+      ))
+    ) : (
+      <tr>
+        <td colSpan="6">No employees found.</td>
       </tr>
-    ));
+    );
   };
 
   return (
